@@ -14,5 +14,9 @@
             <base-name>com.murdash.text.Text</base-name>
             <var>text</var>
         </resource-bundle> 
+        <resource-bundle>
+            <base-name>com.murdash.text.output</base-name>
+            <var>ouput</var>
+        </resource-bundle> 
     </application>
 </faces-config>

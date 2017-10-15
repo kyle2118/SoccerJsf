@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://www.sun.com/jsf/html"
+      xmlns:ui="http://www.java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Facelet title</title>
+        <h:outputStylesheet value="../resources/css/styleMain.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition>
+            <div class="logo">
+                <h:graphicImage value="../resources/images/logo/logo.png" styleClass="logoImg"/>
+            </div>
+            <div class="logoText">
+                <h3>#{ouput.logoText}</h3>
+            </div>
+            
+            <div class="welcome">
+                <h5>#{ouput.welcomeText}</h5>
+                <h6>#{ouput.welcomeLogout}</h6>
+            </div>
+            
+            <div class="search">
+                <h:form styleClass="searchForm">
+                    <h:inputText id="searchString" styleClass="searchString"/>
+                    <h:commandButton value="#{ouput.searchButton}" styleClass="seatchButton"/>
+                    <h:selectOnMenu value="">  <!-- value=Controller -->
+                        <f:selectItems value=""/>
+                        
+                    </h:selectOnMenu>
+                </h:form>
+            </div>
+            
+        </ui:composition>
+    </h:body>
+</html>

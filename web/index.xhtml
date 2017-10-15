@@ -32,7 +32,7 @@
 
                     <div class="usernameDiv">
                         <h:inputText id="username" value="#{user.username}" required="true" requiredMessage="#{msg.login_required}" styleClass="username" maxlength="20">
-                            <f:validator validatorId="com.murdash.web.validators.LoginValidator" />
+                            <f:validator validatorId="com.murdash.web.validators.LoginValidator"/>
                         </h:inputText>
                         
                     </div>
@@ -43,6 +43,7 @@
                             <f:validator validatorId="com.murdash.web.validators.PasswordValidator"/>
                         </h:inputSecret>
                     </div>
+                    
 
 
                     <div class="submitButtonDiv">
@@ -60,6 +61,8 @@
                         </a>
                     </div>
                     
+                        <p><h:message for="username" styleClass="error"/></p>
+                        <p><h:message for="password" styleClass="error"/></p>
                 </h:form>            
             </div>
         </div>

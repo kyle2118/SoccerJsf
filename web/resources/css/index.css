@@ -67,5 +67,10 @@ p#signUpButton {
     width: 200px;
     height: 200px;
 }
-
+.error {
+    font-size: 15px;
+    line-height: 20px;
+    color: #FF0000;
+    font-style: italic;
+}
 /* end of header */
