@@ -1,0 +1,71 @@
+body {
+    font-family: 'Palatino';
+    font-size: 22px;
+    line-height: 30px;
+    background: #001F3F;
+    /*background: #000;*/
+}
+.content {
+    /*padding: 10px 50px;*/
+    text-align: center;
+    margin: 1% auto;
+    width: 80%;
+    background: #FFF;
+}
+.container {
+    
+    padding-top: 5%;
+}
+a:link, a:hover, a:visited, a:active {    
+    text-decoration: none;
+    color: #001F3F;
+}
+a:hover {
+    opacity: 0.5;
+}
+.usernameDiv, .passwordDiv, .submitButtonDiv, .signUpButtonDiv {
+    
+    padding: 5px 8px;
+}
+.submitButtonDiv, .signUpButtonDiv {
+    display: inline-block;
+    margin: 0;
+}
+.username, .password {
+    /*size: 80px;*/
+    padding-left: 3px;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+
+
+.submitButton, #signUpButton {
+    font-family: 'Palatino';
+    font-size: 18px;
+    color: #FFF;
+    height: 40px; 
+    width: 90px;
+    background-color: #001F3F;
+    border: 1px solid #001F3F;
+    border-radius: 9px;
+}
+.passwordDiv {
+    margin-bottom: 10px;
+}
+p#signUpButton {
+    /*margin: 5px 0;*/
+    line-height: 40px;
+    border: 0;
+    margin: 0;
+}
+.submitButton:hover, #signUpButton:hover {
+    opacity: 0.7;
+}
+/* Header text: logo and img */
+.logoImg {
+    width: 200px;
+    height: 200px;
+}
+
+/* end of header */

@@ -1,0 +1,29 @@
+#listOfClubsTable {
+    border-collapse: collapse;
+    width: 100%;
+    vertical-align: center;
+}
+#listOfClubsTable th {
+    /*background: #57A0D3;*/
+    /*padding: 0 20px;*/
+    font-weight: bold;
+}
+#listOfClubsTable td, th {
+    /*width: 33%;*/
+    padding: 5px 0 5px 0;   
+}
+#listOfClubsTable td .icon{
+    padding-right: 0;
+    padding-left: 10px;
+}
+.row:hover {
+    background: #588BAE;
+}
+img {
+    width: 40px;
+    height: 30px;
+}
+.icon {
+    padding-right: 0;
+    margin-left: 0;
+}

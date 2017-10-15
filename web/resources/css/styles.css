@@ -1,0 +1,42 @@
+body {
+    background: #9c9c9c;
+    line-height: 25px;
+    font-size: 25px;
+}
+.siteContent {
+    padding: 70px 30px;
+    margin: 70px 30px;
+    font-family: "Helvetica", Times, serif;
+}
+#initialForm {
+    border: 5px solid #6c6c6c;
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+.input {
+    font-size: 23px;
+    border: 1px solid #000;
+}
+#signIn, #signUp {
+    font-size: 38px;
+    padding: 5px;
+}
+#signIn {
+    /*background: #00f;*/
+}
+#cars {
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center;
+}
+#cars table, th, td,tr {
+    border: 1px solid black;
+    padding: auto;
+    margin: auto;
+}
+.thText {
+    background: khaki;
+}

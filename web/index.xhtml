@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>#{text.indexTitle}</title>
+        
+        
+<!--        <h:outputStylesheet value="resources/css/main.css" library="resources"/>
+        <h:outputStylesheet value="resources/css/index.css" library="resources"/>-->
+        
+        <link href="resources/css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/main.css" rel="stylesheet" type="text/css"/>
+        
+    </h:head>
+    <h:body>
+        <div class="content" style="height: 500px;">
+            <div class="header">
+                <span class="logoDiv">
+                        <!-- TODO width 200 -->
+                        <h3 class="logoText">
+                            <!--Java Web project-->
+                        </h3>
+                </span>
+            </div>
+            <div class="container"> 
+                <h:form>
+
+                    <p class="headText"> #{text.indexText} </p> 
+
+
+                    <div class="usernameDiv">
+                        <h:inputText id="username" value="#{user.username}" required="true" requiredMessage="#{msg.login_required}" styleClass="username" maxlength="20">
+                            <f:validator validatorId="com.murdash.web.validators.LoginValidator" />
+                        </h:inputText>
+                        
+                    </div>
+
+
+                    <div class="passwordDiv">
+                        <h:inputSecret id="password" value="#{user.password}" required="true" requiredMessage="#{msg.password_required}" styleClass="password" maxlength="20">
+                            <f:validator validatorId="com.murdash.web.validators.PasswordValidator"/>
+                        </h:inputSecret>
+                    </div>
+
+
+                    <div class="submitButtonDiv">
+                        <h:commandButton action="#{navigate.getNav}" value="Sign In" class="submitButton" />
+                        <!--<input type="submit" name="submit" id="submitButton">-->
+                    </div>
+
+
+                    <div class="signUpButtonDiv">
+                        <a href="#">
+                            <p id="signUpButton">
+                                <!--Sign up-->
+                                Sign up
+                            </p>
+                        </a>
+                    </div>
+                    
+                </h:form>            
+            </div>
+        </div>
+    </h:body>
+</html>
+
